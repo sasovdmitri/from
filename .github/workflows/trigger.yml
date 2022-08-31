@@ -25,3 +25,4 @@ jobs:
           curl -X POST https://api.github.com/repos/sasovdmitri/to/dispatches \
           -H 'Accept: application/vnd.github+json' \
           -u ${{ secrets.ACCESS_TOKEN }} 
+          --data '{"event_type": "test"}'
